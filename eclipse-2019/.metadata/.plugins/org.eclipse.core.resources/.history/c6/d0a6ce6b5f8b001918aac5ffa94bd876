@@ -1,0 +1,14 @@
+
+public class Test {
+
+	static{
+		init();
+	}
+	
+	private final static Logger logger = Logger.getLogger(Test.class);
+	
+	public static void main(String[] args) {
+
+	}
+
+}

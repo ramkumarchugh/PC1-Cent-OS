@@ -1,0 +1,35 @@
+package Decorator1.Decorator1;
+
+// TODO: Auto-generated Javadoc
+/**
+ * The Class GreenShapeDecorator.
+ */
+public class GreenShapeDecorator extends ShapeDecorator {
+
+    /**
+     * Instantiates a new green shape decorator.
+     *
+     * @param decoratedShape the decorated shape
+     */
+    public GreenShapeDecorator(Shape decoratedShape) {
+        super(decoratedShape);        
+     }
+
+     /**
+      * Draw.
+      */
+     @Override
+     public void draw() {
+        decoratedShape.draw();           
+        setRedBorder(decoratedShape);
+     }
+
+     /**
+      * Sets the red border.
+      *
+      * @param decoratedShape the new red border
+      */
+     private void setRedBorder(Shape decoratedShape){
+        System.out.println("Border Color: Green");
+     }
+  }

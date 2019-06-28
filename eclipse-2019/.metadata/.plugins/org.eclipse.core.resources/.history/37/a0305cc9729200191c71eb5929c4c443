@@ -1,0 +1,19 @@
+package Presentation1;
+
+public class PlainPizza implements Pizza {
+    
+    public String getDescription() {
+        
+        return "Thin dough";
+    
+    }
+
+    public double getCost() {
+
+        System.out.println("Cost of Dough: " + 40.00);
+        
+        return 40.00;
+    
+    }
+ 
+}

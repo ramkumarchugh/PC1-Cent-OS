@@ -1,0 +1,24 @@
+package com.test.q2;
+/**
+ * Transport Class with main method
+ * @author impetus
+ *
+ */
+public class Transport {
+
+    public static void main(String args[])
+    {
+        Truck t1=new Truck("2008","MP09AB3252",25,60,12.50,265480);
+        Bus b1=new Bus("2010","MP09XA5685",40,55,10,56);
+        t1.fuelNeeded(500, 13)
+        t1.distanceCovered(5, 30);
+        t1.display(30, 45, 12, 2008, MP09XZ5265);
+        
+        
+        b1.fuelNeeded(500, 13)
+        b1.distanceCovered(5, 30);
+        b1.display(30, 45, 12, 2008, MP09XZ5265);
+        
+        
+    }
+}

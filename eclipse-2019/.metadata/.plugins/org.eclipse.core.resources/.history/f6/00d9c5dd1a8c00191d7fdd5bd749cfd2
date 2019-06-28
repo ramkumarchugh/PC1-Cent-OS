@@ -1,0 +1,25 @@
+package com.test.q2;
+
+public class Truck extends Vehicle{
+long cargoWeightLimit;
+
+public Truck(String vehicleModel, String registrationNumber, float vehicleSpeed, int fuelCapacity, float fuelConsumption, long cargoWeightLimit) {
+    super(vehicleModel, registrationNumber, vehicleSpeed, fuelCapacity, fuelConsumption);
+    this.cargoWeightLimit = cargoWeightLimit;
+}
+
+public long getCargoWeightLimit() {
+    return cargoWeightLimit;
+}
+
+public void setCargoWeightLimit(long cargoWeightLimit) {
+    this.cargoWeightLimit = cargoWeightLimit;
+}
+
+@Override
+public void display(float vehicleSpeed, int fuelCapacity, float fuelConsumption, String vehicleModel, String registrationNumber) {
+    // TODO Auto-generated method stub
+    super.display(vehicleSpeed, fuelCapacity, fuelConsumption, vehicleModel, registrationNumber);
+}
+
+}

@@ -1,0 +1,45 @@
+package com.assignment.q1;
+import java.util.ArrayList;
+
+
+
+//import java.util.ArrayList;
+
+import java.util.logging.Logger;
+public class StringArray {
+    
+    
+    
+        /** This method will return the top most element in 2*2 matrix else not found.
+         * 
+         * @param strArr
+         *            []
+         * @param chList
+         *            - Array list.
+         * @return string. */
+        public String validSqaure(String[] strArr, ArrayList<Character> chList) {
+
+            int size = strArr[0].length();
+            int sizeArray = strArr.length;
+            boolean flag = false;
+            for (int i = 1; i < sizeArray; i++) {
+                for (int k = 1; k < size; k++) {
+                    if ((chList.contains(strArr[i - 1].charAt(k - 1))) && (chList.contains(strArr[i - 1].charAt(k)))
+                            && (chList.contains(strArr[i].charAt(k - 1))) && (chList.contains(strArr[i].charAt(k)))) {
+                        String topLeftPosition = (i - 1) + "-" + (k - 1);
+                        flag = true;
+                        return topLeftPosition;
+                    }
+                }
+            }
+            if (!flag) {
+                return "Not Found";
+            }
+            return "Input can't be empty";
+        }
+
+
+
+    }
+
+

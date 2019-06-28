@@ -1,0 +1,40 @@
+package com.test.q3;
+
+import org.apache.log4j.Logger;
+import org.apache.log4j.xml.DOMConfigurator;
+
+/** Bubble Sort.
+ * 
+ * @author impetus */
+public class BubbleSort {
+    static {
+        init();
+    }
+
+    //in
+    private static final Logger LOGGER = Logger.getLogger(BubbleSort.class);
+
+    /** init method. */
+    private static void init() {
+        DOMConfigurator.configure("log4j.xml");
+    }
+
+    /** @param args */
+    public static void main(String[] args) {
+        final int[] aRR = { 3, 7, 2, 1, 6, 8, 9, 4 };
+        for (int i = 0; i < aRR.length - 1; i++) {
+            for (int j = 0; j < aRR.length - i - 1; j++) {
+                if (aRR[j] > aRR[j + 1]) {
+                    int temp = aRR[j];
+                    aRR[j] = aRR[j + 1];
+                    aRR[j + 1] = temp;
+
+                }
+            }
+        }
+        for (int i = 0; i < aRR.length; i++) {
+            LOGGER.info("The Sorted array is" + aRR[i]);
+        }
+    }
+
+}

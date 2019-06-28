@@ -1,0 +1,32 @@
+package com.assignment.q1;
+
+import java.util.ArrayList;
+import java.util.logging.Logger;
+
+import com.assignment.q2.Reflection;
+
+
+/**
+ * Hello world!
+ *
+ */
+public class App 
+{
+    public static void main( String[] args )
+    {
+        public static final Logger LOGGER = Logger.getLogger(App.class.getName());
+        StringArray testSquare = new StringArray();
+        String[] inputString = { "abcd", "fjkr", "vpfj" };
+        ArrayList<Character> searchString = new ArrayList<Character>();
+
+        searchString.add('b');
+        searchString.add('f');
+        searchString.add('j');
+        searchString.add('p');
+        searchString.add('v');
+
+        String result = testSquare.validSqaure(inputString, searchString);
+        
+
+    }
+}

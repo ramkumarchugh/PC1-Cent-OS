@@ -1,0 +1,27 @@
+package com.presentation1;
+import java.util.logging.Logger;
+
+
+/**
+ * The Class PizzaMaker.
+ */
+public class PizzaMaker {
+    
+    /**
+     * The main method.
+     *
+     * @param args the arguments
+     */
+    public static void main(String[] args){
+        
+        
+        
+        Pizza basicPizza = new TomatoSauce(new Mozzarella(new PlainPizza()));
+        
+        logger.info("Ingredients: " + basicPizza.getDescription());
+        
+        System.out.println("Price: " + basicPizza.getCost());
+        
+    }
+    
+}

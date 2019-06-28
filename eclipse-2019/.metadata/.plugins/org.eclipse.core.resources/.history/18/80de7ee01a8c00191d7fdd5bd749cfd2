@@ -1,0 +1,29 @@
+package com.test.q2;
+
+public class Bus extends Vehicle{
+    int noOfPassengers;
+
+    public Bus(String vehicleModel, String registrationNumber, float vehicleSpeed, int fuelCapacity, float fuelConsumption, int noOfPassengers) {
+        super(vehicleModel, registrationNumber, vehicleSpeed, fuelCapacity, fuelConsumption);
+        this.noOfPassengers = noOfPassengers;
+    }
+
+    public int getNoOfPassengers() {
+        return noOfPassengers;
+    }
+
+    public void setNoOfPassengers(int noOfPassengers) {
+        this.noOfPassengers = noOfPassengers;
+    }
+
+    @Override
+    public void display(float vehicleSpeed, int fuelCapacity, float fuelConsumption, String vehicleModel, String registrationNumber) {
+        // TODO Auto-generated method stub
+        super.display(vehicleSpeed, fuelCapacity, fuelConsumption, vehicleModel, registrationNumber);
+    }
+    
+
+    
+    
+
+}

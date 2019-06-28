@@ -1,0 +1,10 @@
+
+”squid:S1488D"`Immediately return this expression instead of assigning it to the temporary variable "distance".(µ Äº8±Âë§´-H™RMINORZ
+CODE_SMELL
+„squid:CommentedOutCodeLineK"<This block of commented-out lines of code should be removed.(¤«ïøÿÿÿÿ8ã²à¨´-H›RMAJORZ
+CODE_SMELL
+q
+squid:S106L"9Replace this use of System.out or System.err by a logger.(•Öó÷øÿÿÿÿ8¼Ôª«´-HªRMAJORZ
+CODE_SMELL
+–squid:S1488>"bImmediately return this expression instead of assigning it to the temporary variable "fuelneeded".(Š½äÈ8ã²à¨´-HšRMINORZ
+CODE_SMELL

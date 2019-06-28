@@ -1,0 +1,11 @@
+package Decorator1.Decorator1;
+
+public class Triangle implements Shape{
+
+    public void draw() {
+        System.out.println("Shape:Triangle");
+        
+    }
+    
+
+}

@@ -1,0 +1,128 @@
+2019-06-11 09:44:25,198 +0530 [main] INFO  (BubbleSort.java:37) - The Sorted array is1
+2019-06-11 09:44:25,200 +0530 [main] INFO  (BubbleSort.java:37) - The Sorted array is2
+2019-06-11 09:44:25,200 +0530 [main] INFO  (BubbleSort.java:37) - The Sorted array is3
+2019-06-11 09:44:25,200 +0530 [main] INFO  (BubbleSort.java:37) - The Sorted array is4
+2019-06-11 09:44:25,200 +0530 [main] INFO  (BubbleSort.java:37) - The Sorted array is6
+2019-06-11 09:44:25,200 +0530 [main] INFO  (BubbleSort.java:37) - The Sorted array is7
+2019-06-11 09:44:25,200 +0530 [main] INFO  (BubbleSort.java:37) - The Sorted array is8
+2019-06-11 09:44:25,200 +0530 [main] INFO  (BubbleSort.java:37) - The Sorted array is9
+2019-06-11 09:47:52,327 +0530 [main] INFO  (BubbleSort.java:33) - The Sorted array is1
+2019-06-11 09:47:52,329 +0530 [main] INFO  (BubbleSort.java:33) - The Sorted array is2
+2019-06-11 09:47:52,330 +0530 [main] INFO  (BubbleSort.java:33) - The Sorted array is3
+2019-06-11 09:47:52,330 +0530 [main] INFO  (BubbleSort.java:33) - The Sorted array is4
+2019-06-11 09:47:52,330 +0530 [main] INFO  (BubbleSort.java:33) - The Sorted array is6
+2019-06-11 09:47:52,330 +0530 [main] INFO  (BubbleSort.java:33) - The Sorted array is7
+2019-06-11 09:47:52,330 +0530 [main] INFO  (BubbleSort.java:33) - The Sorted array is8
+2019-06-11 09:47:52,330 +0530 [main] INFO  (BubbleSort.java:33) - The Sorted array is9
+2019-06-12 15:47:09,198 +0530 [main] INFO  (Transport.java:44) - Fuel needed in litre of truck 6250.0
+2019-06-12 15:47:09,200 +0530 [main] INFO  (Transport.java:45) - Fuel needed in litre of truck 1375.0
+2019-06-12 15:47:09,200 +0530 [main] INFO  (Vehicle.java:162) - The Vehicle Information is
+Vehicle Model
+2008Registration Number 
+MP09AB3252Vehicle Speed 
+25.0Fuel Capacity 
+60Fuel Consumption 
+12.5
+2019-06-12 15:47:09,200 +0530 [main] INFO  (Transport.java:48) - Fuel needed in litre of Bus 6000.0
+2019-06-12 15:47:09,200 +0530 [main] INFO  (Transport.java:49) - Fuel needed in litre of Bus 2400.0
+2019-06-12 15:47:09,200 +0530 [main] INFO  (Vehicle.java:162) - The Vehicle Information is
+Vehicle Model
+2010Registration Number 
+MP09XA5685Vehicle Speed 
+40.0Fuel Capacity 
+55Fuel Consumption 
+10.0
+2019-06-12 15:50:26,879 +0530 [main] INFO  (Transport.java:44) - Fuel needed in litre of truck 6250.0
+2019-06-12 15:50:26,880 +0530 [main] INFO  (Transport.java:45) - Fuel needed in litre of truck 1375.0
+2019-06-12 15:50:26,880 +0530 [main] INFO  (Vehicle.java:162) - The Vehicle Information is
+Vehicle Model
+2008Registration Number 
+MP09AB3252Vehicle Speed 
+25.0Fuel Capacity 
+60Fuel Consumption 
+12.5
+2019-06-12 15:50:26,880 +0530 [main] INFO  (Transport.java:48) - Fuel needed in litre of Bus 6000.0
+2019-06-12 15:50:26,880 +0530 [main] INFO  (Transport.java:49) - Fuel needed in litre of Bus 2400.0
+2019-06-12 15:50:26,880 +0530 [main] INFO  (Vehicle.java:162) - The Vehicle Information is
+Vehicle Model
+2010Registration Number 
+MP09XA5685Vehicle Speed 
+40.0Fuel Capacity 
+55Fuel Consumption 
+10.0
+2019-06-12 15:50:47,680 +0530 [main] INFO  (Transport.java:44) - Fuel needed in litre of truck 6250.0
+2019-06-12 15:50:47,681 +0530 [main] INFO  (Transport.java:45) - Fuel needed in litre of truck 1375.0
+2019-06-12 15:50:47,681 +0530 [main] INFO  (Vehicle.java:162) - The Vehicle Information is
+Vehicle Model2008Registration Number 
+MP09AB3252Vehicle Speed 
+25.0Fuel Capacity 
+60Fuel Consumption 
+12.5
+2019-06-12 15:50:47,682 +0530 [main] INFO  (Transport.java:48) - Fuel needed in litre of Bus 6000.0
+2019-06-12 15:50:47,682 +0530 [main] INFO  (Transport.java:49) - Fuel needed in litre of Bus 2400.0
+2019-06-12 15:50:47,682 +0530 [main] INFO  (Vehicle.java:162) - The Vehicle Information is
+Vehicle Model2010Registration Number 
+MP09XA5685Vehicle Speed 
+40.0Fuel Capacity 
+55Fuel Consumption 
+10.0
+2019-06-12 15:51:09,321 +0530 [main] INFO  (Transport.java:44) - Fuel needed in litre of truck 6250.0
+2019-06-12 15:51:09,322 +0530 [main] INFO  (Transport.java:45) - Fuel needed in litre of truck 1375.0
+2019-06-12 15:51:09,323 +0530 [main] INFO  (Vehicle.java:162) - The Vehicle Information is
+Vehicle Model2008
+Registration Number 
+MP09AB3252Vehicle Speed 
+25.0Fuel Capacity 
+60Fuel Consumption 
+12.5
+2019-06-12 15:51:09,323 +0530 [main] INFO  (Transport.java:48) - Fuel needed in litre of Bus 6000.0
+2019-06-12 15:51:09,323 +0530 [main] INFO  (Transport.java:49) - Fuel needed in litre of Bus 2400.0
+2019-06-12 15:51:09,323 +0530 [main] INFO  (Vehicle.java:162) - The Vehicle Information is
+Vehicle Model2010
+Registration Number 
+MP09XA5685Vehicle Speed 
+40.0Fuel Capacity 
+55Fuel Consumption 
+10.0
+2019-06-12 15:53:07,769 +0530 [main] INFO  (Transport.java:44) - Fuel needed in litre of truck 6250.0
+2019-06-12 15:53:07,771 +0530 [main] INFO  (Transport.java:45) - Fuel needed in litre of truck 1375.0
+2019-06-12 15:53:07,771 +0530 [main] INFO  (Vehicle.java:162) - The Vehicle Information is
+Vehicle Model2008
+Registration NumberMP09AB3252
+Vehicle Speed 25.0
+Fuel Capacity60
+Fuel Consumption12.5
+
+2019-06-12 15:53:07,771 +0530 [main] INFO  (Transport.java:48) - Fuel needed in litre of Bus 6000.0
+2019-06-12 15:53:07,771 +0530 [main] INFO  (Transport.java:49) - Fuel needed in litre of Bus 2400.0
+2019-06-12 15:53:07,771 +0530 [main] INFO  (Vehicle.java:162) - The Vehicle Information is
+Vehicle Model2010
+Registration NumberMP09XA5685
+Vehicle Speed 40.0
+Fuel Capacity55
+Fuel Consumption10.0
+
+2019-06-12 15:54:51,068 +0530 [main] INFO  (Transport.java:44) - Fuel needed in litre of truck 6250.0
+2019-06-12 15:54:51,069 +0530 [main] INFO  (Transport.java:45) - Fuel needed in litre of truck 1375.0
+2019-06-12 15:54:51,070 +0530 [main] INFO  (Vehicle.java:162) - The Vehicle Information is
+Vehicle Model -2008
+Registration Number -MP09AB3252
+Vehicle Speed -25.0
+Fuel Capacity in Liters -60
+Fuel Consumption -12.5
+
+2019-06-12 15:54:51,070 +0530 [main] INFO  (Transport.java:48) - Fuel needed in litre of Bus 6000.0
+2019-06-12 15:54:51,070 +0530 [main] INFO  (Transport.java:49) - Fuel needed in litre of Bus 2400.0
+2019-06-12 15:54:51,070 +0530 [main] INFO  (Vehicle.java:162) - The Vehicle Information is
+Vehicle Model -2010
+Registration Number -MP09XA5685
+Vehicle Speed -40.0
+Fuel Capacity in Liters -55
+Fuel Consumption -10.0
+
+2019-06-12 15:54:57,326 +0530 [main] INFO  (Permutation.java:43) - MNO
+2019-06-12 15:54:57,328 +0530 [main] INFO  (Permutation.java:43) - MON
+2019-06-12 15:54:57,328 +0530 [main] INFO  (Permutation.java:43) - NMO
+2019-06-12 15:54:57,328 +0530 [main] INFO  (Permutation.java:43) - NOM
+2019-06-12 15:54:57,330 +0530 [main] INFO  (Permutation.java:43) - ONM
+2019-06-12 15:54:57,330 +0530 [main] INFO  (Permutation.java:43) - OMN

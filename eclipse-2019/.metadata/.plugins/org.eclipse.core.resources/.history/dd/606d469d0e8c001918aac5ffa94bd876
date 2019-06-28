@@ -1,0 +1,15 @@
+package com.test.q2;
+
+public class Truck extends Vehicle{
+long cargoWeightLimit;
+
+public Truck(String vehicleModel, String registrationNumber, float vehicleSpeed, int fuelCapacity, float fuelConsumption, long cargoWeightLimit) {
+    super(vehicleModel, registrationNumber, vehicleSpeed, fuelCapacity, fuelConsumption);
+    this.cargoWeightLimit = cargoWeightLimit;
+}
+
+public Truck(String vehicleModel, String registrationNumber, float vehicleSpeed, int fuelCapacity, float fuelConsumption) {
+    super(vehicleModel, registrationNumber, vehicleSpeed, fuelCapacity, fuelConsumption);
+    // TODO Auto-generated constructor stub
+}
+}

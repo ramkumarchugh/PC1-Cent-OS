@@ -1,0 +1,166 @@
+package com.test.q2;
+
+import org.apache.log4j.Logger;
+import org.apache.log4j.xml.DOMConfigurator;
+
+import com.test.q3.BubbleSort;
+
+/** The Class Vehicle.
+ *
+ * @author impetus */
+public class Vehicle {
+    static {
+        init();
+    }
+
+    /** The Constant LOGGER. */
+    // in
+    private static final Logger LOGGER = Logger.getLogger(BubbleSort.class);
+
+    /** init method. */
+    private static void init() {
+        DOMConfigurator.configure("log4j.xml");
+    }
+
+    /** The vehicle model. */
+    private String vehicleModel;
+
+    /** The registration number. */
+    private String registrationNumber;
+
+    /** The vehicle speed. */
+    private float vehicleSpeed;
+
+    /** The fuel capacity. */
+    private int fuelCapacity;
+
+    /** The fuel consumption. */
+    private float fuelConsumption;
+
+    /** Instantiates a new vehicle.
+     *
+     * @param vehicleModel
+     *            the vehicle model
+     * @param registrationNumber
+     *            the registration number
+     * @param vehicleSpeed
+     *            the vehicle speed
+     * @param fuelCapacity
+     *            the fuel capacity
+     * @param fuelConsumption
+     *            the fuel consumption */
+    public Vehicle(String vehicleModel, String registrationNumber, float vehicleSpeed, int fuelCapacity, float fuelConsumption) {
+        super();
+        this.vehicleModel = vehicleModel;
+        this.registrationNumber = registrationNumber;
+        this.vehicleSpeed = vehicleSpeed;
+        this.fuelCapacity = fuelCapacity;
+        this.fuelConsumption = fuelConsumption;
+    }
+
+    /** Gets the vehicle model.
+     *
+     * @return the vehicle model */
+    public String getVehicleModel() {
+        return vehicleModel;
+    }
+
+    /** Sets the vehicle model.
+     *
+     * @param vehicleModel
+     *            the new vehicle model */
+    public void setVehicleModel(String vehicleModel) {
+        this.vehicleModel = vehicleModel;
+    }
+
+    /** Gets the registration number.
+     *
+     * @return the registration number */
+    public String getRegistrationNumber() {
+        return registrationNumber;
+    }
+
+    /** Sets the registration number.
+     *
+     * @param registrationNumber
+     *            the new registration number */
+    public void setRegistrationNumber(String registrationNumber) {
+        this.registrationNumber = registrationNumber;
+    }
+
+    /** Gets the vehicle speed.
+     *
+     * @return the vehicle speed */
+    public float getVehicleSpeed() {
+        return vehicleSpeed;
+    }
+
+    /** Sets the vehicle speed.
+     *
+     * @param vehicleSpeed
+     *            the new vehicle speed */
+    public void setVehicleSpeed(float vehicleSpeed) {
+        this.vehicleSpeed = vehicleSpeed;
+    }
+
+    /** Gets the fuel capacity.
+     *
+     * @return the fuel capacity */
+    public int getFuelCapacity() {
+        return fuelCapacity;
+    }
+
+    /** Sets the fuel capacity.
+     *
+     * @param fuelCapacity
+     *            the new fuel capacity */
+    public void setFuelCapacity(int fuelCapacity) {
+        this.fuelCapacity = fuelCapacity;
+    }
+
+    /** Gets the fuel consumption.
+     *
+     * @return the fuel consumption */
+    public float getFuelConsumption() {
+        return fuelConsumption;
+    }
+
+    /** Sets the fuel consumption.
+     *
+     * @param fuelConsumption
+     *            the new fuel consumption */
+    public void setFuelConsumption(float fuelConsumption) {
+        this.fuelConsumption = fuelConsumption;
+    }
+
+    /** Fuel needed.
+     *
+     * @param distance
+     *            the distance
+     * @return the float */
+    public float fuelNeeded(int distance) {
+        float fuelneeded = fuelConsumption * distance;
+        return fuelneeded;
+
+    }
+
+    /** Distance covered. LOGGER.info
+     * 
+     * @param time
+     *            the time
+     * @return the float */
+    public float distanceCovered(int time) {
+        float distance = vehicleSpeed * time;
+
+        return distance;
+
+    }
+
+    /** Display. */
+    public void display() {
+        // LOGGER.info("The Vehicle Information is" + vehicleModel + registrationNumber + vehicleSpeed + fuelCapacity + fuelConsumption);
+        LOGGER.info("The Vehicle Information is" + "\n" + "Vehicle Model" + vehicleModel +"\n"+ "Registration Number \n" + registrationNumber
+                + "Vehicle Speed \n" + vehicleSpeed + "Fuel Capacity \n" + fuelCapacity + "Fuel Consumption \n" + fuelConsumption);
+    }
+
+}

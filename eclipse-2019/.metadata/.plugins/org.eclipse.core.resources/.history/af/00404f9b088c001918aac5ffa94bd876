@@ -1,0 +1,22 @@
+package com.test.q2;
+
+public class Vehicle {
+
+    String vehicleModel;
+
+    public Vehicle(String vehicleModel) {
+        super();
+        this.vehicleModel = vehicleModel;
+    }
+
+    public String getVehicleModel() {
+        return vehicleModel;
+    }
+
+    public void setVehicleModel(String vehicleModel) {
+        this.vehicleModel = vehicleModel;
+    }
+    
+    
+    
+}

@@ -1,0 +1,9 @@
+package Decorator1.Decorator1;
+
+public class GreenShapeDecorator {
+
+    public GreenShapeDecorator() {
+        // TODO Auto-generated constructor stub
+    }
+
+}

@@ -1,0 +1,28 @@
+package com.assignment.q2;
+
+import java.lang.reflect.Method;
+import java.lang.reflect.Field;
+
+import org.apache.log4j.Logger;
+
+
+/** The Class Reflection. */
+public class Reflection {
+    public static final Logger LOGGER = Logger.getLogger(Reflection.class);
+    /** The main method.
+     *
+     * @param args
+     *            the arguments
+     * @throws Exception
+     *             the exception */
+    public static void main(String[] args) throws Exception {
+        PrivateMethod p = new PrivateMethod();
+        Method m = PrivateMethod.class.getDeclaredMethod("privateMethod");
+        Field f = PrivateMethod.class.getDeclaredField("privateString");
+        m.setAccessible(true);
+        m.invoke(p, null);
+        f.setAccessible(true);
+        LOGGER.info(f.get(p));
+    }
+}
+    

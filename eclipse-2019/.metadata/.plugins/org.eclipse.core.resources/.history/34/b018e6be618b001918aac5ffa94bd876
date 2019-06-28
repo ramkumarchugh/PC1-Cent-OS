@@ -1,0 +1,46 @@
+package com.log4j.test;
+
+import org.apache.log4j.Logger;
+import org.apache.log4j.xml.DOMConfigurator;
+
+/** Test2 is a class.
+ * 
+ * */
+public class Test2 {
+
+	static{
+		init();
+	}
+	
+	private static final Logger LOGGER = Logger.getLogger(Test2.class);
+	
+	public static void main(String[] args) {
+		LOGGER.info("Hello");
+	}
+	
+	private static void init() {
+		DOMConfigurator.configure("log4j.xml");
+	}
+
+}
+
+
+/*
+ * 
+ *	Help> MarketPlace > search 
+ *	1. Checkstyle
+ *  2. Sonar lint
+ * 	 
+ *  Install anyways
+ *  
+ *  success
+ *  
+ *  1. Add impetus checkstyle.
+ *  Windows > preferences > CHeckstyle > add new (external)
+ *  2. Apply it to project.
+ *  Right CLick on project > Checkstyle > activate/Check code.
+ *   
+ * 
+ * 
+ * 
+ * */

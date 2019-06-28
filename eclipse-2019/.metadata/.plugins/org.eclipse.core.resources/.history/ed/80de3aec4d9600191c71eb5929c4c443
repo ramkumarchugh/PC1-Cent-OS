@@ -1,0 +1,51 @@
+package com.assignment.q1;
+import java.util.logging.Logger;
+
+/** Driver Class. It will ask which program you want to run. */
+public class App {
+
+    private static final Logger LOGGER = Logger.getLogger("App.class");
+
+    /** main.
+     * 
+     * @param args
+     *            [] */
+    public static void main(String[] args) {
+
+        LOGGER.info("1. ArrayLogic.");
+        String[] strArr1 = { "abcd", "fjkr", "vpfj" };
+        ArrayList<Character> chlist = new ArrayList<Character>();
+        chlist.add('b');
+        chlist.add('f');
+        chlist.add('j');
+        chlist.add('p');
+        chlist.add('v');
+
+        String[] strArr2 = { "abcd", "fjkr", "vpfj" };
+        ArrayList<Character> chlist2 = new ArrayList<Character>();
+        chlist2.add('a');
+        chlist2.add('a');
+        chlist2.add('a');
+        chlist2.add('a');
+        chlist2.add('a');
+
+        StringArrayLogic salObject = new StringArrayLogic();
+        String output1 = salObject.validSqaure(strArr1, chlist);
+
+        String output2 = salObject.validSqaure(strArr2, chlist2);
+
+        ArrayList<Character> chlist3 = new ArrayList<Character>();
+        String output3 = salObject.validSqaure(null, chlist3);
+        LOGGER.info(output1);
+        LOGGER.info(output2);
+        LOGGER.info(output3);
+
+        LOGGER.info("2. Private method and field access.");
+        PrivateMethodFieldAccess pmfa = new PrivateMethodFieldAccess();
+        pmfa.accessPrivateMembers();
+
+        LOGGER.info("3. Anonymous Class.");
+        TestAnonymous taObject = new TestAnonymous();
+        taObject.methodtoCall();
+    }
+}

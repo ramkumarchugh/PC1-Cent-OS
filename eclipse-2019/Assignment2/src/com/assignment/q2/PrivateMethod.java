@@ -1,0 +1,18 @@
+package com.assignment.q2;
+
+import java.util.logging.Logger;
+
+/** The Class PrivateMethod. */
+public class PrivateMethod {
+    /** The Class PrivateMethods. */
+
+    /** The Constant LOGGER. */
+    public static final Logger LOGGER = Logger.getLogger(Reflection.class.getName());
+    /** The private string. */
+    private String privateString = "This is a private String";
+
+    /** Private method. */
+    private void privateMethod() {
+        LOGGER.info("Calling private method");
+    }
+}

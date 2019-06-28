@@ -1,0 +1,89 @@
+package com.assignment.q2;
+
+import java.lang.reflect.Method;
+import java.lang.reflect.Field;
+import java.lang.reflect.Constructor;
+import java.util.logging.Logger;
+
+/** @author impetus Test Class */
+class Test {
+    private static final Logger LOGGER = Logger.getLogger(Reflection.class.getName());
+
+    private String s;
+
+    /** Constructor. */
+    public Test() {
+        s = "Hello Impetus";
+    }
+
+    /** Public Method 1. */
+    public void method1() {
+        LOGGER.info("The string is " + s);
+    }
+
+    /** Public Method 2.
+     *
+     * @param n
+     *            the n */
+    public void method2(int n) {
+        LOGGER.info("The number is " + n);
+    }
+
+    /** Private Method 3. */
+    private void method3() {
+        LOGGER.info("Private method invoked");
+    }
+}
+
+/** The Class Reflection. */
+class Reflection {
+
+    /** The main method. */
+
+    /** Logger object creation */
+    private static final Logger LOGGER = Logger.getLogger(Reflection.class.getName());
+
+    /** The main method.
+     *
+     * @param args
+     *            the arguments
+     * @throws Exception
+     *             the exception */
+    public static void main(String[] args) throws Exception {
+
+        Test obj = new Test();
+
+        Class cls = obj.getClass();
+        LOGGER.info("The name of class is " + cls.getName());
+
+        Constructor constructor = cls.getConstructor();
+        LOGGER.info("The name of constructor is " + constructor.getName());
+
+        LOGGER.info("The public methods of class are : ");
+
+        Method[] methods = cls.getMethods();
+
+        for (Method method : methods)
+            LOGGER.info(method.getName());
+
+        Method methodcall1 = cls.getDeclaredMethod("method2", int.class);
+
+        methodcall1.invoke(obj, 007);
+
+        Field field = cls.getDeclaredField("s");
+
+        field.setAccessible(true);
+
+        field.set(obj, "JAVA");
+
+        Method methodcall2 = cls.getDeclaredMethod("method1");
+
+        methodcall2.invoke(obj);
+
+        Method methodcall3 = cls.getDeclaredMethod("method3");
+
+        methodcall3.setAccessible(true);
+
+        methodcall3.invoke(obj);
+    }
+}

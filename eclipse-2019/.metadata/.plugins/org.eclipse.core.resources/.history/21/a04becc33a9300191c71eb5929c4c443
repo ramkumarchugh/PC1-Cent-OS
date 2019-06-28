@@ -1,0 +1,21 @@
+package com.Decorator;
+
+import java.util.logging.Logger;
+
+public class RedShapeDecorator extends ShapeDecorator {
+    private static final Logger LOGGER = Logger.getLogger(DecoratorPatternDemo.class.getName());
+
+    public RedShapeDecorator(Shape decoratedShape) {
+       super(decoratedShape);        
+    }
+
+    @Override
+    public void draw() {
+       decoratedShape.draw();           
+       setRedBorder(decoratedShape);
+    }
+
+    private void setRedBorder(Shape decoratedShape){
+       LOGGER.info("Border Color: Red");
+    }
+ }

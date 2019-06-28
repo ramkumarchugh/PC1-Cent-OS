@@ -1,0 +1,16 @@
+package com.Decorator;
+
+/**
+ * The Class Rectangle.
+ */
+public class Rectangle implements Shape{
+
+    /**
+     * Draw.
+     */
+    public void draw() {
+        System.out.println("Shape:Rectangle");
+    }
+    
+
+}

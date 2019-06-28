@@ -1,0 +1,18 @@
+package Decorator1.Decorator1;
+
+// TODO: Auto-generated Javadoc
+/**
+ * The Class Circle.
+ */
+public class Circle implements Shape{
+
+    /**
+     * Draw.
+     */
+    public void draw() {
+        System.out.println("Shape:Circle");
+        
+    }
+    
+
+}

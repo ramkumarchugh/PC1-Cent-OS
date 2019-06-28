@@ -1,0 +1,23 @@
+package com.log4j.test;
+
+import org.apache.log4j.Logger;
+import org.apache.log4j.xml.DOMConfigurator;
+
+public class Test {
+    static {
+        init();
+    }
+
+    private static final Logger LOGGER = Logger.getLogger(Test2.class);
+
+    /** init method. */
+    private static void init() {
+        DOMConfigurator.configure("log4j.xml");
+    }
+    
+    public static void main(String args[]) {
+    LOGGER.info("HEllo");    
+        
+    }
+
+}

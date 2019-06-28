@@ -1,0 +1,6 @@
+package Decorator1.Decorator1;
+
+public interface Shape {
+
+    void draw();
+}

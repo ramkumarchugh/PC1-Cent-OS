@@ -1,0 +1,22 @@
+package com.presentation1;
+import java.util.*; 
+
+import java.util.logging.Logger;
+
+/** The Class PizzaMaker. */
+public class PizzaMaker {
+
+     
+      
+    public static void main(String args[]){  
+    Vector<String> v=new Vector<String>();  
+    v.add("Ayush");  
+    v.add("Amit");  
+    v.add("Ashish");  
+    v.add("Garima");  
+    Iterator<String> itr=v.iterator();  
+    while(itr.hasNext()){  
+    System.out.println(itr.next());  
+    }  
+    }  
+    }  

@@ -1,0 +1,28 @@
+package com.presentation1;
+
+import java.util.logging.Logger;
+
+public class TomatoSauce extends ToppingDecorator {
+    private static final Logger LOGGER = Logger.getLogger(PizzaMaker.class.getName());
+    public TomatoSauce(Pizza newPizza) {
+        super(newPizza);
+        
+        System.out.println("Adding Sauce");
+    }
+    
+    
+    public String getDescription(){
+        
+        return tempPizza.getDescription() + ", tomato sauce";
+        
+    }
+    
+    public double getCost(){
+        
+        System.out.println("Cost of Sauce: " + 5.35);
+        
+        return tempPizza.getCost() + 5.35;
+        
+    }
+    
+}

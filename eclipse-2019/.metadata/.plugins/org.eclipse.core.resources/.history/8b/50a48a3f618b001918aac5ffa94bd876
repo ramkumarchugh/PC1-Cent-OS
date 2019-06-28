@@ -1,0 +1,39 @@
+package com.log4j.test;
+
+import org.apache.log4j.Logger;
+import org.apache.log4j.xml.DOMConfigurator;
+
+public class Test2 {
+
+	static{
+		init();
+	}
+	
+	private final static Logger logger = Logger.getLogger(Test2.class);
+	
+	public static void main(String[] args) {
+		logger.info("Hello");
+
+	}
+	private static void init() {
+		DOMConfigurator.configure("log4j.xml");
+	}
+
+}
+
+
+/*
+ * 
+ *	Help> MarketPlace > search 
+ *	1. Checkstyle
+ *  2. Sonar lint
+ * 	 
+ *  Install anyways
+ *  
+ *  success
+ *  
+ *  1. Add impetus checkstyle 
+ * 
+ * 
+ * 
+ * */

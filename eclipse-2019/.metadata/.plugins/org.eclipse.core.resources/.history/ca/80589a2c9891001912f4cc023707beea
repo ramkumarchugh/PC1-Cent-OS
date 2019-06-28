@@ -1,0 +1,25 @@
+package com.assignment.q3;
+
+/** @author impetus */
+interface Calculate {
+
+    void square(int y);
+}
+/** The Class Anonymous. */
+class Anonymous {
+   /** The main method.
+     *
+     * @param args
+     *            the arguments */
+    public static void main(String[] args) {
+
+        Calculate oj1 = new Calculate() {
+            @Override
+            public void square(int a) {
+                // printing square
+                System.out.print("Square of number is " + a * a);
+            }
+        };
+        oj1.square(10);
+    }
+}

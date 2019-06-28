@@ -1,0 +1,22 @@
+
+
+import org.apache.log4j.Logger;
+import org.apache.log4j.xml.DOMConfigurator;
+
+public class Test {
+
+	static{
+		init();
+	}
+	
+	private final static Logger logger = Logger.getLogger(Test.class);
+	
+	public static void main(String[] args) {
+
+	}
+	private static void init() {
+		DOMConfigurator.configure("log4j.xml");
+	}
+
+
+}

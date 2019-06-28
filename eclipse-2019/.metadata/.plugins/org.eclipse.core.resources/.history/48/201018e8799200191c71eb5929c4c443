@@ -1,0 +1,30 @@
+package com.presentation1;
+import java.util.logging.Logger;
+
+
+// TODO: Auto-generated Javadoc
+/**
+ * The Class PizzaMaker.
+ */
+public class PizzaMaker {
+    
+    /** The Constant LOGGER. */
+    private static final Logger LOGGER = Logger.getLogger(PizzaMaker.class.getName());
+    /**
+     * The main method.
+     *
+     * @param args the arguments
+     */
+    public static void main(String[] args){
+        
+        
+        
+        Pizza basicPizza = new TomatoSauce(new Mozzarella(new PlainPizza()));
+        
+        LOGGER.info("Ingredients: " + basicPizza.getDescription());
+        
+        LOGGER.info("Price: " + basicPizza.getCost());
+        
+    }
+    
+}

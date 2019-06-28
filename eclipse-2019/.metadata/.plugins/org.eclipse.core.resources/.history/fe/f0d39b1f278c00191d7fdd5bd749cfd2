@@ -1,0 +1,176 @@
+package com.test.q2;
+
+/**
+ * The Class Vehicle.
+ *
+ * @author impetus
+ */
+public class Vehicle {
+
+    /** The vehicle model. */
+    private String vehicleModel;
+    
+    /** The registration number. */
+    String registrationNumber;
+    
+    /** The vehicle speed. */
+    float vehicleSpeed;
+    
+    /** The fuel capacity. */
+    int fuelCapacity;
+    
+    /** The fuel consumption. */
+    float fuelConsumption;
+
+    /**
+     * Instantiates a new vehicle.
+     *
+     * @param vehicleModel the vehicle model
+     * @param registrationNumber the registration number
+     * @param vehicleSpeed the vehicle speed
+     * @param fuelCapacity the fuel capacity
+     * @param fuelConsumption the fuel consumption
+     */
+    public Vehicle(String vehicleModel, String registrationNumber, float vehicleSpeed, int fuelCapacity, float fuelConsumption) {
+        super();
+        this.vehicleModel = vehicleModel;
+        this.registrationNumber = registrationNumber;
+        this.vehicleSpeed = vehicleSpeed;
+        this.fuelCapacity = fuelCapacity;
+        this.fuelConsumption = fuelConsumption;
+    }
+
+    /**
+     * Gets the vehicle model.
+     *
+     * @return the vehicle model
+     */
+    public String getVehicleModel() {
+        return vehicleModel;
+    }
+
+    /**
+     * Sets the vehicle model.
+     *
+     * @param vehicleModel the new vehicle model
+     */
+    public void setVehicleModel(String vehicleModel) {
+        this.vehicleModel = vehicleModel;
+    }
+
+    /**
+     * Gets the registration number.
+     *
+     * @return the registration number
+     */
+    public String getRegistrationNumber() {
+        return registrationNumber;
+    }
+
+    /**
+     * Sets the registration number.
+     *
+     * @param registrationNumber the new registration number
+     */
+    public void setRegistrationNumber(String registrationNumber) {
+        this.registrationNumber = registrationNumber;
+    }
+
+    /**
+     * Gets the vehicle speed.
+     *
+     * @return the vehicle speed
+     */
+    public float getVehicleSpeed() {
+        return vehicleSpeed;
+    }
+
+    /**
+     * Sets the vehicle speed.
+     *
+     * @param vehicleSpeed the new vehicle speed
+     */
+    public void setVehicleSpeed(float vehicleSpeed) {
+        this.vehicleSpeed = vehicleSpeed;
+    }
+
+    /**
+     * Gets the fuel capacity.
+     *
+     * @return the fuel capacity
+     */
+    public int getFuelCapacity() {
+        return fuelCapacity;
+    }
+
+    /**
+     * Sets the fuel capacity.
+     *
+     * @param fuelCapacity the new fuel capacity
+     */
+    public void setFuelCapacity(int fuelCapacity) {
+        this.fuelCapacity = fuelCapacity;
+    }
+
+    /**
+     * Gets the fuel consumption.
+     *
+     * @return the fuel consumption
+     */
+    public float getFuelConsumption() {
+        return fuelConsumption;
+    }
+
+    /**
+     * Sets the fuel consumption.
+     *
+     * @param fuelConsumption the new fuel consumption
+     */
+    public void setFuelConsumption(float fuelConsumption) {
+        this.fuelConsumption = fuelConsumption;
+    }
+    
+    /**
+     * Fuel needed.
+     *
+     * @param distance the distance
+     * @param fuelConsumption the fuel consumption
+     * @return the float
+     */
+    public float fuelNeeded(int distance, float fuelConsumption)
+    {
+        float fuelneeded=fuelConsumption*distance;
+        return fuelneeded;
+        
+    }
+
+    /**
+     * Distance covered.
+     *
+     * @param time the time
+     * @param vehicleSpeed the vehicle speed
+     * @return the float
+     */
+    public float distanceCovered(int time, float vehicleSpeed) {
+        float distance = vehicleSpeed * time;
+
+        return distance;
+
+    }
+    
+    /**
+     * Display.
+     *
+     * @param vehicleSpeed the vehicle speed
+     * @param fuelCapacity the fuel capacity
+     * @param fuelConsumption the fuel consumption
+     * @param vehicleModel the vehicle model
+     * @param registrationNumber the registration number
+     */
+    public void display(float vehicleSpeed,int fuelCapacity,float fuelConsumption,String vehicleModel,String registrationNumber)
+    {
+        //LOGGER.info("The Vehicle Information is" + vehicleModel + registrationNumber + vehicleSpeed + fuelCapacity + fuelConsumption);
+    System.out.println("The Vehicle Information is \n" + vehicleModel + "\n" + registrationNumber + "\n" + vehicleSpeed + "\n"+ fuelCapacity + "\n" + fuelConsumption);
+    }
+
+}

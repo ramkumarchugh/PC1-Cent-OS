@@ -1,0 +1,5 @@
+package Decorator1.Decorator1;
+
+public class ShapeDecorator {
+
+}

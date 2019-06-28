@@ -1,0 +1,34 @@
+package com.assignment.q3;
+// TODO: Auto-generated Javadoc
+interface Age 
+{ 
+    
+    void square(int y); 
+} 
+
+/**
+ * The Class Anonymous.
+ */
+class Anonymous 
+{ 
+    
+    /**
+     * The main method.
+     *
+     * @param args the arguments
+     */
+    public static void main(String[] args) { 
+  
+        // Myclass is hidden inner class of Age interface 
+        // whose name is not written but an object to it  
+        // is created. 
+        Age oj1 = new Age() { 
+            @Override
+            public void square(int a) { 
+                 // printing  age 
+                System.out.print("Age is "+a*a); 
+            } 
+        }; 
+        oj1.square(10); 
+    } 
+} 

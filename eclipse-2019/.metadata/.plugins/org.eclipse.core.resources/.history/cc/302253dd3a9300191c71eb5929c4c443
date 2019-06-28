@@ -1,0 +1,14 @@
+package com.Decorator;
+
+import java.util.logging.Logger;
+
+public class Triangle implements Shape{
+    private static final Logger LOGGER = Logger.getLogger(DecoratorPatternDemo.class.getName());
+
+    public void draw() {
+        LOGGER.info("Shape:Triangle");
+        
+    }
+    
+
+}

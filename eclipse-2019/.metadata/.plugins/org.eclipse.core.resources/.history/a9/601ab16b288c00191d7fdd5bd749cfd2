@@ -1,0 +1,83 @@
+package com.test.q2;
+/**
+ * 
+ * @author impetus
+ *
+ */
+public class Vehicle {
+
+    String vehicleModel;
+    String registrationNumber;
+    float vehicleSpeed;
+    int fuelCapacity;
+    float fuelConsumption;
+
+    public Vehicle(String vehicleModel, String registrationNumber, float vehicleSpeed, int fuelCapacity, float fuelConsumption) {
+        super();
+        this.vehicleModel = vehicleModel;
+        this.registrationNumber = registrationNumber;
+        this.vehicleSpeed = vehicleSpeed;
+        this.fuelCapacity = fuelCapacity;
+        this.fuelConsumption = fuelConsumption;
+    }
+
+    public String getVehicleModel() {
+        return vehicleModel;
+    }
+
+    public void setVehicleModel(String vehicleModel) {
+        this.vehicleModel = vehicleModel;
+    }
+
+    public String getRegistrationNumber() {
+        return registrationNumber;
+    }
+
+    public void setRegistrationNumber(String registrationNumber) {
+        this.registrationNumber = registrationNumber;
+    }
+
+    public float getVehicleSpeed() {
+        return vehicleSpeed;
+    }
+
+    public void setVehicleSpeed(float vehicleSpeed) {
+        this.vehicleSpeed = vehicleSpeed;
+    }
+
+    public int getFuelCapacity() {
+        return fuelCapacity;
+    }
+
+    public void setFuelCapacity(int fuelCapacity) {
+        this.fuelCapacity = fuelCapacity;
+    }
+
+    public float getFuelConsumption() {
+        return fuelConsumption;
+    }
+
+    public void setFuelConsumption(float fuelConsumption) {
+        this.fuelConsumption = fuelConsumption;
+    }
+    
+    public float fuelNeeded(int distance)
+    {
+        float fuelneeded=fuelConsumption*distance;
+        return fuelneeded;
+        
+    }
+
+    public float distanceCovered(int time) {
+        float distance = vehicleSpeed * time;
+
+        return distance;
+
+    }
+    public void display(float vehicleSpeed,int fuelCapacity,float fuelConsumption,String vehicleModel,String registrationNumber)
+    {
+        //LOGGER.info("The Vehicle Information is" + vehicleModel + registrationNumber + vehicleSpeed + fuelCapacity + fuelConsumption);
+    System.out.println("The Vehicle Information is \n" + vehicleModel + "\n" + registrationNumber + "\n" + vehicleSpeed + "\n"+ fuelCapacity + "\n" + fuelConsumption);
+    }
+
+}
